@@ -67,6 +67,16 @@ li {
 	background-color:#20B2AA;
 	border: 1px solid black;
 }
+.outcome-container {
+	text-align:center;
+	position: absolute;
+	background-color: #DA70D6;
+	width:80%;
+	height:60%;
+}
+.hidden {
+	display:none;
+}
 
 footer {
 	position:absolute;

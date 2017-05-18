@@ -7,66 +7,64 @@
 	<link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
+	<section>
+		<div class="page">
+			<div class="header-button-container">
+				<h1>The Korean Food Quiz</h1>
+				<div class="button-container">
+					<button class="start-button" id="start-button">Start</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<div class="page">
-		<div class="header-button-container">
-			<h1>The Korean Food Quiz</h1>
-			<button class="start-button" id="start-button">Start</button>
+		<div class="outcome-container">
+			<h2> Incorrect <br>The correct answer was [b]</h2>
+			<button class="start-button" id="next-page">Next</button>
 		</div>
 	</div>
 
-	<main role="main">
 
-		<section>
-			<div class="page" >
-				<div class="page-counter"><p>Question 1 out of 5</p></div>
-				<div class="question-container">
-					<h2 class="question-header">Which Korean dish is this?</h2>
-					<div class="answer-image-container">
-						<ul class="answer-choices">
-							<li class="answer-choice"><button class="answer-button" id="a"></button><label for="#a">a. kimchi</label></li>
-							<li class="answer-choice"><button class="answer-button" id="b"></button><label for="#b">b. bibimbap</label></li>
-							<li class="answer-choice"><button class="answer-button" id="c"></button><label for="#c">c. naengmyun</label></li>
-							<li class="answer-choice"><button class="answer-button" id="d"></button><label for="#d">d. galbi</label></li>
-						</ul>
-						<img src="http://www.rcsinteriors.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/l/g/lgr-light-grey_8.jpg" alt="" class="img-style">
-					</div>
+	<section>
+		<div class="page" >
+			<div class="page-counter"><p>Question 1 out of 5</p></div>
+			<div class="question-container">
+				<h2 class="question-header">Which Korean dish is this?</h2>
+				<div class="answer-image-container">
+					<ul class="answer-choices">
+						<li class="answer-choice"><button class="answer-button" id="a"></button><label for="#a">a. kimchi</label></li>
+						<li class="answer-choice"><button class="answer-button" id="b"></button><label for="#b">b. bibimbap</label></li>
+						<li class="answer-choice"><button class="answer-button" id="c"></button><label for="#c">c. naengmyun</label></li>
+						<li class="answer-choice"><button class="answer-button" id="d"></button><label for="#d">d. galbi</label></li>
+					</ul>
+					<img src="http://www.rcsinteriors.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/l/g/lgr-light-grey_8.jpg" alt="" class="img-style">
 				</div>
-				<div class="results"><p>Current score: 1 correct 0 incorrect</p></div>
 			</div>
-		</section>
+			<div class="results"><p>Current score: 1 correct 0 incorrect</p></div>
+			<div class="outcome-container hidden">
+				<h2> Incorrect <br><span class="correct-answer">The correct answer was [b]</h2>
+				<button class="start-button" id="next-page">Next</button>
+		</div>
+	</section>
 
-		<section>
-			<div class="page">
-				<div class="page-counter">
-					<p>Question 2 out of 5</p>
+	<section>
+		<div class="page">
+			<div class="header-button-container">
+				<h1><em>Congratulations!</em> <br>You got 3 out of 5 correct answers</h1> 
+				<div> Would you like to try again?
+					<button id="yes">yes</button>
+					<button id="no">no</button>
 				</div>
-				<div class="question-container">
-					<h2>Which one of these dishes did not originate from korea?</h2>
-					<div class="answer-image-container">
-						<ul class="answer-choices">
-							<li class="answer-choice"><button class="answer-button" id="a"></button><label for="#a">bibimbap</label></li>
-							<li class="answer-choice"><button class="answer-button" id="b"></button><label for="#b">kimchi</label></li>
-							<li class="answer-choice"><button class="answer-button" id="c"></button><label for="#c">chow mein</label></li>
-							<li class="answer-choice"><button class="answer-button" id="d"></button><label for="#d">tteok-bokki</label></li>
-						</ul>
-					</div>
-				</div>
-				<div class="results"><p>Current score: 2 correct 0 incorrect</p></div>
 			</div>
-		</section>
-
-		<section>
-			<div class="page">
-				<div class="header-button-container">
-					<h2><em>Congratulations!</em> <br>You got 3 out of 5 correct answers</h2> 
-					<div> Would you like to try again?
-						<button id="yes">yes</button>
-						<button id="no">no</button>
-					</div>
-				</div>
-				<footer>Written and code by Jeong Joon (Peter) Choe</footer>
-			</div>
-		</section>
-	</main>
+			<footer>Written and coded by Jeong Joon 'Peter' Choe</footer>
+		</div>
+	</section>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
 </html>
+
